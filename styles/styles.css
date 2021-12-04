@@ -1,0 +1,143 @@
+:root {
+	--first-color: #78909c;
+	--second-color: #ff9800;
+	--third-color: #ffb74d;
+	--fourth-color: #ff5722;
+	--fifth-color: #784719;
+	--base-color: #4f525142;
+	--rectangle-color: #bf360c;
+}
+
+.check-span {
+	display: block;
+	width: 200px;
+	height: 200px;
+
+	background-image: url(../image/businesswoman.svg);
+}
+.icon-color {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	border: 1px solid firebrick;
+}
+
+.check-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.t-shirt {
+	fill: var(--base-color);
+}
+
+.neck {
+	fill: var(--base-color);
+}
+.face {
+	fill: var(--base-color);
+}
+.hair {
+	fill: var(--base-color);
+}
+
+.collar {
+	fill: var(--base-color);
+}
+
+.eyes {
+	fill: var(--base-color);
+}
+.rectangle {
+	fill: var(--base-color);
+}
+
+.label-t-shirt {
+	position: absolute;
+	left: 230px;
+}
+.input-t-shirt {
+	position: absolute;
+	left: 200px;
+}
+.input-t-shirt:checked ~ * .t-shirt {
+	fill: var(--first-color);
+}
+.label-neck {
+	position: absolute;
+	left: 230px;
+	top: 20px;
+}
+.input-neck {
+	position: absolute;
+	left: 200px;
+	top: 20px;
+}
+.input-neck:checked ~ * .neck {
+	fill: var(--second-color);
+}
+.label-face {
+	position: absolute;
+	left: 230px;
+	top: 40px;
+}
+.input-face {
+	position: absolute;
+	left: 200px;
+	top: 40px;
+}
+.input-face:checked ~ * .face {
+	fill: var(--third-color);
+}
+.label-hair {
+	position: absolute;
+	left: 230px;
+	top: 60px;
+}
+.input-hair {
+	position: absolute;
+	left: 200px;
+	top: 60px;
+}
+.input-hair:checked ~ * .hair {
+	fill: var(--fourth-color);
+}
+.label-collar {
+	position: absolute;
+	left: 230px;
+	top: 80px;
+}
+.input-collar {
+	position: absolute;
+	left: 200px;
+	top: 80px;
+}
+.input-collar:checked ~ * .collar {
+	fill: var(--third-color);
+}
+.label-eyes {
+	position: absolute;
+	left: 230px;
+	top: 100px;
+}
+.input-eyes {
+	position: absolute;
+	left: 200px;
+	top: 100px;
+}
+.input-eyes:checked ~ * .eyes {
+	fill: var(--fifth-color);
+}
+.label-rectangle {
+	position: absolute;
+	left: 230px;
+	top: 120px;
+}
+.input-rectangle {
+	position: absolute;
+	left: 200px;
+	top: 120px;
+}
+.input-rectangle:checked ~ * .rectangle {
+	fill: var(--rectangle-color);
+}
